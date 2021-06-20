@@ -14,7 +14,7 @@ public class WebConfig implements WebMvcConfigurer, WebServerFactoryCustomizer<C
         //Adds the navigation
         registry.addViewController("/home").setViewName("forward:/index.html");
         registry.addViewController("/detail").setViewName("forward:/detail.html");
-//        registry.addViewController("/**").setViewName("forward:/index.html");
+        registry.addViewController("/registration").setViewName("forward:/registration.html");
     }
 
     @Override

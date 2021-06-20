@@ -20,8 +20,11 @@ public class User {
     private String name;
 
     @NotNull
+    @Column(unique=true)
     private String userName;
 
+    @NotNull
+    @Column(unique=true)
     private String email;
 
     @NotNull
